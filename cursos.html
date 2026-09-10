@@ -28,11 +28,48 @@
 
         </section>
         <section>
-            <h3>
-                <p>Caso ficou interessado em aprender algum curso, faça seu cadastro abaixo: 
-                    <form action="" method="post"></form>
-                </p>
-            </h3>
+            <h3><strong>Cadastro e Agendamentos </strong></h3>
+                <p>Caso ficou interessado em aprender algum curso, faça seu cadastro abaixo: ( agende no espaço "Data" o dia e horário que gostaria de fazer sua primeira aula. )</p>
+                    <form action="#" method="post">
+                     <label for="nome">Nome Completo:</label>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="telefone">Telefone:</label>
+            <input 
+                type="tel" 
+                name="telefone" 
+                id="telefone"
+                required
+                inputmode="numeric"
+                maxlength="15"
+                >
+            <br>
+            <label for="data">Data:</label>
+            <input type="date" name="data" id="data">
+            <br>
+            <label for="hora">Horário</label>
+            <input type="time" name="hora" id="hora">
+            <br>
+            <label for="especialidade">Especialidades:</label>
+            <select name="especialidade" id="especialidade">
+                <option value="">Selecione uma opção</option>
+                <option value="futebol">Análise de Desempenho e Scouting Profissional no Futebol</option>
+                <option value="futsal">Análise Tática e Estatística no Futsal de Alta Performance</option>
+                <option value="basquete">Basquete Analytics: Do Shot Chart às Métricas Avançadas</option>
+                <option value="volei">DataVolley e Scouting de Alta Performance no Vôlei</option>
+                <option value="handebol">Scouting e Leitura Tática no Handebol</option>
+                <option value="tenis">Análise de Padrões e Estatística no Tênis</option>
+                <option value="atletismo">Biomecânica e Análise de Dados no Atletismo</option>
+            </select>
+           <br>
+           <label for="mensagem">Mensagem:</label>
+           <textarea name="mensagem" id="mensagem" rows="4"></textarea>
+           <br>
+           <button type="submit">Confirmar Agendamento</button>
+        </form>
         </section>
           <footer>
         <p>Contato: (17) 99777-4321 | contato@esportedidatico.com.br</p>
